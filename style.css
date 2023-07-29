@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-repeat: no-repeat;
+    transition: background-image 1s;
+}
+
+.button {
+    padding: 10px 20px;
+    background: limegreen;
+    border: none;
+    border-radius: 3px;
+    color: #fbfbf9ef;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.pause {
+    background-color: rgb(47, 94, 163);
+}
+
+.grid {
+    height: 40rem;
+    width: 40rem;
+    border: solid grey 3px;
+    position: relative;
+    box-shadow: 5px 5px 10px #eee;
+    margin-bottom: 2rem;
+}
+
+.grid > div {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: top .2s, left 0.2s;
+}
+
+.rock {
+    content: "";
+    background: url("./rock.png");
+    background-size: cover;
+}
+
+.paper {
+    content: "";
+    background: url("./paper.png");
+    background-size: cover;
+}
+
+.scissor {
+    content: "";
+    background: url("./scissor.png");
+    background-size: cover;
+}
+
+.fire {
+    content: "";
+    background: url("./fire.png");
+    background-size: cover;
+}
+
+h3 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
